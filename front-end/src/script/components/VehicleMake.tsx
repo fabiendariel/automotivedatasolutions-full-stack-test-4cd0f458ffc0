@@ -5,10 +5,10 @@ type resultProps = {
   name: string;
 };
 
-export default function VehicleMake(vehicleMakeId: number) => {
+export default function VehicleMake(vehicleMakeId) => {
   const [result, setResult] = useState<resultProps[]>([]);
   useEffect(() => {
-    const api = async (vehicleMakeId: number) => {
+    const api = async (vehicleMakeId) => {
       const data = await fetch("https://localhost/api/vehicle-makes/" + vehicleMakeId, {
         method: "GET"
       });

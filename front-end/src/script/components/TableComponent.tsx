@@ -1,8 +1,8 @@
 import React from 'react';
 
-const TableComponent = ({ Array: vehicleMake, Array: vehicleYears, Array: vehicleList  }) => {
+const TableComponent = ({ vehicleMake, vehicleYears  }) => {
   const years = vehicleYears.map(item => Object.values(item));
-  const vehicules = vehicleList[vehicleMake.id]['coverage'].map(item => Object.values(item));
+  //const vehicules = vehicleList[vehicleMake.id]['coverage'].map(item => Object.values(item));
 
   return (  
 
@@ -13,9 +13,8 @@ const TableComponent = ({ Array: vehicleMake, Array: vehicleYears, Array: vehicl
           <td key={year}>{year}</td>       
         ))}
     </tr>
-      
     <tr>
-      <td>Modele</td>
+        <td>ILX</td>
       <td></td>
       <td className="stated"></td>
       <td></td>
@@ -27,7 +26,7 @@ const TableComponent = ({ Array: vehicleMake, Array: vehicleYears, Array: vehicl
       <td></td>
     </tr>
     <tr>
-      <td>Modele</td>
+        <td>MDX</td>
       <td></td>
       <td></td>
       <td className="stated"></td>
@@ -39,7 +38,7 @@ const TableComponent = ({ Array: vehicleMake, Array: vehicleYears, Array: vehicl
       <td></td>
     </tr>
     <tr>
-      <td>Modele</td>
+        <td>RDX</td>
       <td></td>
       <td></td>
       <td></td>
@@ -51,7 +50,7 @@ const TableComponent = ({ Array: vehicleMake, Array: vehicleYears, Array: vehicl
       <td className="stated"></td>
     </tr>
     <tr>
-      <td>Modele</td>
+        <td>RLX</td>
       <td className="stated"></td>
       <td className="stated"></td>
       <td className="stated"></td>
@@ -63,7 +62,7 @@ const TableComponent = ({ Array: vehicleMake, Array: vehicleYears, Array: vehicl
       <td></td>
     </tr>
     <tr>
-      <td>Modele</td>
+        <td>TL</td>
       <td></td>
       <td></td>
       <td className="stated"></td>
@@ -75,7 +74,7 @@ const TableComponent = ({ Array: vehicleMake, Array: vehicleYears, Array: vehicl
       <td></td>
     </tr>
     <tr>
-      <td>Modele</td>
+        <td>TLX</td>
       <td className="stated"></td>
       <td className="stated"></td>
       <td className="stated"></td>
@@ -87,7 +86,7 @@ const TableComponent = ({ Array: vehicleMake, Array: vehicleYears, Array: vehicl
       <td className="stated"></td>
     </tr>
     <tr>
-      <td>Modele</td>
+        <td>TSX</td>
       <td className="stated"></td>
       <td></td>
       <td></td>

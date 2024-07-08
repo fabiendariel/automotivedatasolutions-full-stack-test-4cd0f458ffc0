@@ -38,11 +38,11 @@ const vehicleList = [
   { id: 1, data: [
     { id: 903, data: ['2018', '2017', '2016'] }
 ];
-*/
+*/ 
 export const App: React.FC = () => {
   return (
     <div>
-      <TableComponent vehicleMake={vehicleMake} vehicleYears={vehicleYears} vehicleModels={vehicleModels} />
+      <TableComponent vehicleMake={vehicleMake} vehicleYears={vehicleYears} />
     </div>
   );
 }
