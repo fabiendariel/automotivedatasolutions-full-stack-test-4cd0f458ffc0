@@ -90,7 +90,7 @@ class VehicleRepository
         if (!count($records)) {
             throw new VehicleListNotFoundException();
         }
-
+        
         return array_map(function($record) {
             return $this->convertArrayToObject($record)->jsonSerialize();
         }, $records);

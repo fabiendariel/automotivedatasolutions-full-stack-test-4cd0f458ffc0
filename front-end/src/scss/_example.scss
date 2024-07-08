@@ -8,3 +8,28 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+table {
+  width: 100%;
+}
+
+table td {
+  background-color: #DDD;
+  text-align: left;
+  padding-left: 2%;
+}
+
+table thead td:first-child {
+  width: 20%;
+}
+
+table thead td:not(:first-child) {
+  writing-mode: vertical-lr;
+  height: 100px;
+  text-align: center;
+  padding: 0;
+}
+
+.stated {
+  background-color: blue;
+}
