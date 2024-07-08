@@ -1,36 +1,19 @@
 import React from 'react';
 
-const TableComponent = ({ vehicleMake, vehicleYears, vehicleModels, vehicleDatas }) => {
-  const headers = Object.keys(data[0]);
-  const rows = data.map(item => Object.values(item));
+const TableComponent = ({ Array: vehicleMake, Array: vehicleYears, Array: vehicleList  }) => {
+  const years = vehicleYears.map(item => Object.values(item));
+  const vehicules = vehicleList[vehicleMake.id]['coverage'].map(item => Object.values(item));
 
-  return (
-    <table>
-      <thead>
-        <tr>
-          {headers.map(header => <th key={header}>{header}</th>)}
-        </tr>
-      </thead>
-      <tbody>
-        {rows.map((row, index) => (
-          <tr key={index}>
-            {row.map((cell, index) => <td key={index}>{cell}</td>)}
-          </tr>
-        ))}
-      </tbody>
-    </table>
-    /*
-export const App: React.FC = () => 
+  return (  
+
   <table>
     <tr>
-      <td>{VehicleMake}</td>
-      {VehicleYears.map(VehicleYear => (
-        <YearColumn key={VehicleYear.year} />
-      ))}
+        <td>{vehicleMake.name}</td>
+        {years.map((year) => (
+          <td key={year}>{year}</td>       
+        ))}
     </tr>
-    {VehicleModels.map(VehicleModel => (
-      <VehicleModelLine key={VehicleYear.year} />
-    ))}
+      
     <tr>
       <td>Modele</td>
       <td></td>
@@ -116,7 +99,7 @@ export const App: React.FC = () =>
       <td></td>
     </tr>
   </table>
-;*/
+
   );
 };
 
